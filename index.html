@@ -33,7 +33,7 @@
         <h3>AKAN NAME GENERATOR</h3>
         <p>
           Welcome to Akan Name Generator. This website lets you 
-          input your date of birth, that is, the year, month and
+          button your date of birth, that is, the year, month and
           date. Then lets you choose yor gender and with a click
           of a button generates your Akam name. Sounds like fun, right?!
           Lets jump to it and see how it works.
@@ -41,8 +41,22 @@
       </div>
       <div class="form">
         <fieldset>
-          <legend>NAME-GENERATOR</legend>
-
+          <legend>NAME GENERATOR</legend>
+            <form action="submit" name="akan">
+              <label for="year">YEAR:</label>
+              <input id="year" type="number" value="" min="4" max="4" placeholder="YYYY" required>
+              <label for="month">MONTH:</label>
+              <input id="month" type="number" value="" min="2" max="2" placeholder="MM" required>
+              <label for="day">DAY</label>
+              <input id="day" type="number" value="" min="2" max="2" placeholder="DD" required>
+              <label for="gender">GENDER</label>
+              <select name="gender" id="gender">
+                <option id="male">MALE</option>
+                <option id="female">FEMALE</option>
+              </select>
+              <button type="submit" id="sub" onclick="myName()">CLICK TO SEE YOUR NAME</button>
+              <button type="reset" id="reset">CLEAR FORM</button>
+            </form>
         </fieldset>
       </div>
     </div>
