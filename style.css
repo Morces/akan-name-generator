@@ -16,6 +16,10 @@ label#g {
 margin-left: 120px;
 margin-top: 15px;
 }
+select#gender {
+background-color: transparent;
+border-radius: 20px;
+}
 fieldset {
 width: 50%;
 margin: auto;
