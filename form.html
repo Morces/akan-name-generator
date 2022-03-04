@@ -10,16 +10,17 @@
 </head>
 <body>
   <div class="container">
-    <div class="form">
-      <fieldset>
-        <legend>NAME GENERATOR</legend>
+    <div class="card">
+        <legend class="card-title bg-info">NAME GENERATOR</legend>
           <form action="submit" name="akan">
+            <div class="dates">
             <label for="year">YEAR:</label>
             <input id="year" type="number" value="" min="4" max="4" placeholder="YYYY" required>
             <label for="month">MONTH:</label>
             <input id="month" type="number" value="" min="2" max="2" placeholder="MM" required>
             <label for="day">DAY</label>
             <input id="day" type="number" value="" min="2" max="2" placeholder="DD" required><br>
+            </div>
             <label for="gender" id="g">GENDER</label>
             <select name="gender" id="gender">
               <option id="male">MALE</option>
@@ -30,7 +31,7 @@
             <button type="reset" id="reset">CLEAR FORM</button>
             </div>
           </form>
-      </fieldset>
+         
     </div>
   </div>
 </body>

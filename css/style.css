@@ -9,27 +9,27 @@ width: 80%;
 margin-top: 10px;
 text-align: center;
 }
-form {
-margin-left: 12%;
-}
 label#g {
-margin-left: 120px;
+margin-left: 200px;
 margin-top: 50px;
 }
 select#gender {
 background-color: transparent;
 border-radius: 20px;
 }
-fieldset {
+.card {
 width: 50%;
 margin: auto;
 margin-top: 30px;
-height: 60vh;
-border: 1px solid black;
+height: 50vh;
+}
+.dates {
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
 }
 legend {
 text-align: center;
-margin-bottom: 20px;
 }
 .buttons {
 display: flex;
