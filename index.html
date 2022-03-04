@@ -48,14 +48,16 @@
               <label for="month">MONTH:</label>
               <input id="month" type="number" value="" min="2" max="2" placeholder="MM" required>
               <label for="day">DAY</label>
-              <input id="day" type="number" value="" min="2" max="2" placeholder="DD" required>
-              <label for="gender">GENDER</label>
+              <input id="day" type="number" value="" min="2" max="2" placeholder="DD" required><br>
+              <label for="gender" id="g">GENDER</label>
               <select name="gender" id="gender">
                 <option id="male">MALE</option>
                 <option id="female">FEMALE</option>
-              </select>
+              </select><br>
+              <div class="buttons">
               <button type="submit" id="sub" onclick="myName()">CLICK TO SEE YOUR NAME</button>
               <button type="reset" id="reset">CLEAR FORM</button>
+              </div>
             </form>
         </fieldset>
       </div>
