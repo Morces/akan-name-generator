@@ -8,6 +8,14 @@ background-color: aliceblue;
 margin-top: 20px;
 height: 85vh;
 }
+.navbar ul li a {
+color: black;
+}
+.navbar ul li a:hover {
+border: 1px solid yellow;
+border-radius: 10px;
+color: black;
+}
 .history{
 margin: auto;
 width: 80%;
