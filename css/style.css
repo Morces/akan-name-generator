@@ -3,6 +3,11 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.container {
+background-color: aliceblue;
+margin-top: 20px;
+height: 85vh;
+}
 .history{
 margin: auto;
 width: 80%;
