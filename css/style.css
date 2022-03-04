@@ -14,7 +14,7 @@ margin-left: 12%;
 }
 label#g {
 margin-left: 120px;
-margin-top: 15px;
+margin-top: 50px;
 }
 select#gender {
 background-color: transparent;
@@ -23,7 +23,8 @@ border-radius: 20px;
 fieldset {
 width: 50%;
 margin: auto;
-height: 30vh;
+margin-top: 30px;
+height: 60vh;
 border: 1px solid black;
 }
 legend {
@@ -33,7 +34,7 @@ margin-bottom: 20px;
 .buttons {
 display: flex;
 justify-content: space-evenly;
-margin-top: 20px;
+margin-top: 50px;
 }
 button, input{
 background-color: transparent;
