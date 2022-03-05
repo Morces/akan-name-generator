@@ -67,5 +67,12 @@ function myName() {
   }
   console.log(dayOfWeek);
 
-  
+  if (valueOfGender == "male" && validMonth && validDay){
+    document.getElementsByClassName("result").textContent = dayOfWeek[position] + "is the day you were born" + "and your Akan name is " + maleNames[position];
+  } else if (valueOfGender == "female" && validMonth && validDay) {
+    document.getElementsByClassName("result").textContent = dayOfWeek[position] + "is the day you were born" + "and your Akan name is " + femaleNames[position];
+  } else {
+    alert ("INVALID DAY OR MONTH!! TRY AGAIN!");
+  }
+   
 }
