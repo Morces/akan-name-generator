@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-.container {
+.container-fluid .container {
 background-color: aliceblue;
 margin-top: 20px;
 height: 85vh;
@@ -54,7 +54,7 @@ background-color: transparent;
 border-radius: 20px;
 }
 .start {
-width: 10%;
+width: 15%;
 margin: auto;
 margin-top: 20px;
 }
