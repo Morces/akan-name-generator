@@ -27,11 +27,14 @@
               <option id="female">FEMALE</option>
             </select><br>
             <div class="buttons">
-            <button type="submit" id="sub" onclick="myName()">CLICK TO SEE YOUR NAME</button>
-            <button type="reset" id="reset">CLEAR FORM</button>
+            <button type="submit" id="sub" onclick="return myName()">CLICK TO SEE YOUR NAME</button>
+            <button type="reset" id="reset" onclick="return clearForm()">CLEAR FORM</button>
             </div>
           </form>
-         
+          <div class="display">
+            <strong>This is your Akan name:</strong>
+            <p class="result"></p>
+          </div>
     </div>
   </div>
 </body>
