@@ -18,7 +18,7 @@ function myName() {
 
   // functions for validation
   function checkMonth() {
-    if (month < 1 || month > 12) {
+    if (month <= 1 || month > 12) {
       return false;
     } else {
       return true;
@@ -36,7 +36,7 @@ function myName() {
       } else {
         return true;
       }
-    } else if (day < 1 || day > 31) {
+    } else if (day <= 0 || day > 31) {
       return false;
     } else {
       return true;
@@ -45,5 +45,17 @@ function myName() {
   // variables for validation
   let validMonth = checkMonth();
   let validDay = checkDay();
+  
+  // specific day of birth formula
+  let dayOfWeek = Math.floor((((Number(year.slice(0,2))/4)-2*Number(year.slice(0,2))-1)+
+  ((5*Number(year.slice(2,4))/4))+((26*(month+1)/10))+day)%7);
+
+  // male and female akan names
+  let maleNames = [
+    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
+  ]; 
+  let femaleNames = [
+    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+  ];
   
 }
