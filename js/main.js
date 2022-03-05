@@ -28,8 +28,22 @@ function myName() {
   function checkDay() {
     if (month === 2 && Number(year)%4 === 0) {
       if (day > 28 || day < 1) {
-
+        return false;
+      } else if (month === 2 && day > 29) {
+        return false;
+      } else if (month === 2 && day < 1) {
+        return false;
+      } else {
+        return true;
       }
+    } else if (day < 1 || day > 31) {
+      return false;
+    } else {
+      return true;
     }
   }
+  // variables for validation
+  let validMonth = checkMonth();
+  let validDay = checkDay();
+  
 }
