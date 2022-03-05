@@ -31,7 +31,7 @@ background-color: transparent;
 border-radius: 20px;
 }
 .card {
-width: 50%;
+width: 60%;
 margin: auto;
 margin-top: 30px;
 height: 50vh;
@@ -40,6 +40,7 @@ height: 50vh;
 display: flex;
 justify-content: space-around;
 margin-top: 20px;
+
 }
 legend {
 text-align: center;
@@ -52,6 +53,10 @@ margin-top: 50px;
 button, input{
 background-color: transparent;
 border-radius: 20px;
+}
+.display {
+width: 50%;
+margin: auto;
 }
 .start {
 width: 15%;
