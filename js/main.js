@@ -57,5 +57,15 @@ function myName() {
   let femaleNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
+
+  // index for item selection in the array
+  let position;
+  if (dayOfWeek == 0) {
+    position = 6;
+  } else {
+    position = dayOfWeek - 1;
+  }
+  console.log(dayOfWeek);
+
   
 }
