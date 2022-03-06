@@ -1,13 +1,20 @@
+// const btn = document.getElementsByName("akan");
+// btn.addEventListener('click', (e)=> {
+//   e.preventDefault()
+//   myName()
+// });
+
+
 function myName() {
   let year = document.getElementById("year").value;
   let month = Number(document.getElementById("month").value);
   let day = Number(document.getElementById("day").value);
-  let genders = document.getElementById("gender");
+  let genders = document.getElementsById("gender").value;
 
   // getting gender
   function gettingGender() {
     for (let gender of genders) {
-      if (gender.selected) {
+      if (gender.checked) {
         return gender.value;
       }
     }
@@ -15,10 +22,11 @@ function myName() {
 
   let valueOfGender = gettingGender();
   console.log(valueOfGender);
+  valueOfGender;
 
   // functions for validation
   function checkMonth() {
-    if (month <= 1 || month > 12) {
+    if (month <= 0 || month > 12) {
       return false;
     } else {
       return true;

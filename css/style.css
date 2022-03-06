@@ -22,14 +22,6 @@ width: 80%;
 margin-top: 10px;
 text-align: center;
 }
-label#g {
-margin-left: 200px;
-margin-top: 50px;
-}
-select#gender {
-background-color: transparent;
-border-radius: 20px;
-}
 .card {
 width: 60%;
 margin: auto;
@@ -45,12 +37,16 @@ margin-top: 20px;
 legend {
 text-align: center;
 }
+label.sex  {
+margin-top: 25px;
+margin-left: 230px;
+}
 .buttons {
 display: flex;
 justify-content: space-evenly;
 margin-top: 50px;
 }
-button, input{
+input{
 background-color: transparent;
 border-radius: 20px;
 }
