@@ -1,8 +1,8 @@
-// const btn = document.getElementsByName("akan");
-// btn.addEventListener('click', (e)=> {
-//   e.preventDefault()
-//   myName()
-// });
+const btn = document.getElementById("sub");
+btn.addEventListener('click', (e)=> {
+  e.preventDefault()
+  myName()
+});
 
 
 function myName() {
@@ -75,12 +75,14 @@ function myName() {
   } else {
     position = dayOfWeek - 1;
   }
-  console.log(dayOfWeek);
+  console.log(position);
 
   if (valueOfGender == "male" && validMonth && validDay){
-    document.getElementsByClassName("result").textContent = dayOfWeek[position] + "is the day you were born" + "and your Akan name is " + maleNames[position];
+    document.querySelector("strong").textContent = "Hello!! " + " "+ actualDays[position] + " is the day you were born" + " and your Akan name is " + maleNames[position];
+    return false;
   } else if (valueOfGender == "female" && validMonth && validDay) {
-    document.getElementsByClassName("result").textContent = dayOfWeek[position] + "is the day you were born" + "and your Akan name is " + femaleNames[position];
+    document.querySelector("strong").textContent = "Hello!! " + " "+ actualDays[position] + " is the day you were born" + " and your Akan name is " + femaleNames[position];
+    return false;
   } else {
     alert ("INVALID DAY OR MONTH!! TRY AGAIN!");
   }

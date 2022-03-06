@@ -13,7 +13,7 @@
   <div class="container">
     <div class="card">
         <legend class="card-title bg-info">NAME GENERATOR</legend>
-          <form name="akan" onsubmit="return myName()">
+          <form name="akan">
             <div class="dates">
             <label for="year">YEAR:</label>
             <input id="year" type="number" value="" min="1000" maxlength="4" placeholder="YYYY" required>
@@ -29,13 +29,13 @@
             FEMALE
             <input type="radio" name="gender" value="female" id="gender" required>
             </label><br>
-            <input type="submit" id="sub" value="CLICK TO SEE YOUR NAME">
+            <input type="submit" id="sub" value="CLICK TO SEE YOUR NAME"  onclick="myName()">
             <form onsubmit="return clearForm()">
                <input type="submit" id="reset" value="CLEAR FORM">
             </form>
           </form>
           <div class="display">
-            <strong>This is your Akan name:</strong>
+            <strong class="card-title bg-info">YOUR DETAILS WILL BE DISPLAYED HERE</strong>
             <p class="result"></p>
           </div>
     </div>
