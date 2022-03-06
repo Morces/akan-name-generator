@@ -50,6 +50,10 @@ input{
 background-color: transparent;
 border-radius: 20px;
 }
+#sub, #reset {
+margin-top: 15px;
+margin-left: 100px;
+}
 .display {
 width: 50%;
 margin: auto;

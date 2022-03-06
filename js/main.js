@@ -9,7 +9,7 @@ function myName() {
   let year = document.getElementById("year").value;
   let month = Number(document.getElementById("month").value);
   let day = Number(document.getElementById("day").value);
-  let genders = document.getElementsById("gender").value;
+  let genders = document.getElementsByName("gender");
 
   // getting gender
   function gettingGender() {
