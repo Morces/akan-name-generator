@@ -22,8 +22,7 @@ function myName() {
 
   let valueOfGender = gettingGender();
   console.log(valueOfGender);
-  valueOfGender;
-
+  
   // functions for validation
   function checkMonth() {
     if (month <= 0 || month > 12) {
@@ -59,6 +58,9 @@ function myName() {
   ((5*Number(year.slice(2,4))/4))+((26*(month+1)/10))+day)%7);
 
   // male and female akan names
+  let actualDays = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+  ];
   let maleNames = [
     "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
   ]; 
